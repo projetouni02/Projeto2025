@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build sigsaude",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "banco.c",
+                "login.c",
+                "usuarios.c",
+                "pacientes.c",
+                "medicos.c",
+                "consultas.c",
+                "receitas.c",
+                "sqlite3.c",
+                "-o",
+                "sigsaude.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
